@@ -140,6 +140,7 @@ class LocationFinder {
     document.querySelectorAll(".copy-btn").forEach((btn) => {
       btn.addEventListener("click", (e) => {
         const locationData = e.target.closest(".location-card").dataset.locationData
+        console.log('Copied content:', locationData)  // Log what's being copied
         this.copyToClipboard(locationData)
       })
     })

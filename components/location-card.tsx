@@ -43,15 +43,7 @@ export function LocationCard({ location, translations: t, language }: LocationCa
 ${location.location}
 
 📞 ${t.phones}:
-${location.phones.join(" • ")}
-
-🌐 Find all Anderson branches across Algeria
-#AndersonMap #Algeria #${wilayaName.replace(/\s+/g, "")} #Business #Contact
-
----
-🔍 للمزيد من الفروع: Anderson Map
-🔍 Pour plus de succursales: Anderson Map  
-🔍 For more branches: Anderson Map`
+${location.phones.join(" • ")}`
   }, [locationInfo, location.location, location.phones, t.location, t.phones])
 
   const copyLocationInfo = useCallback(async () => {
